@@ -4,15 +4,13 @@ public class User {
     private Integer user_id;
     private String user_firstname;
     private String user_lastname;
-    private String user_addres;
     private String user_email;
     private String user_password;
 
-    public User(Integer user_id, String user_firstname, String user_lastname, String user_addres, String user_email, String user_password) {
+    public User(Integer user_id, String user_firstname, String user_lastname, String user_email, String user_password) {
         this.user_id = user_id;
         this.user_firstname = user_firstname;
         this.user_lastname = user_lastname;
-        this.user_addres = user_addres;
         this.user_email = user_email;
         this.user_password = user_password;
     }
@@ -41,14 +39,6 @@ public class User {
         this.user_lastname = user_lastname;
     }
 
-    public String getUser_addres() {
-        return user_addres;
-    }
-
-    public void setUser_addres(String user_addres) {
-        this.user_addres = user_addres;
-    }
-
     public String getUser_email() {
         return user_email;
     }
@@ -64,4 +54,5 @@ public class User {
     public void setUser_password(String user_password) {
         this.user_password = user_password;
     }
+}
 
